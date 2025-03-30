@@ -1,0 +1,474 @@
+:root{
+    /*
+    --base-color-1: #292929;
+    --base-color-2: #353535;
+    --base-color-3: #4C4C4C;
+    --base-color-4: #666666;
+    --base-color-5: #828282;
+    --base-color-6: #999999;
+    --base-color-6-50: rgba(99, 99, 99, 0.45);
+    */
+    
+    /*ธีมสีเขียว*/
+    --base-color-1: #005500;
+    --base-color-2: #007100;
+    --base-color-3: #008E00;
+    --base-color-4: #00AA00;
+    --base-color-5: #00C600;
+    --base-color-6: #00E300;
+    --base-color-6-50: rgba(0, 227, 0, 0.45);
+    
+    --black-color: #000000;
+    --od-color: #1D1D1D;
+    --dark-grey-color: #424242;
+    --grey-color: #999999;
+    --background-color: #212121;
+    --font-white-color: #EFEFEF;
+    --p-font-white-color: rgba(255, 255, 255, 0.6);
+    --white-color: #EFEFEF;
+    --footer-text-color: #595959;
+    --bg-s: rgba(85, 85, 85, 0.30);
+    --bg-ss: rgba(85, 85, 85);
+    --snow-color: snow;
+    --header: #131313;
+    --color-block: rgba(90, 90, 90, 0.3);
+    --shadow: rgba(0, 0, 0, 0.3);
+    --input-color: rgba(99, 99, 99, 0.55);
+}
+
+body{
+    background: var(--background-color);
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    cursor: url(/img/cursor-default-24.png),  default;
+}
+
+a, button, [role="button"] , .reset-button , .cesium-viewer-toolbar > button ,
+.cesium-navigationHelpButton-wrapper > button , .con-btn{
+    cursor: url(/img/cursortest12.png), pointer;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: calc(100vh - 52px);
+    position: relative;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar:hover{
+    width: 12px;
+}
+  
+::-webkit-scrollbar-track:hover {
+    background: var(--header);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--base-color-1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: radial-gradient(var(--base-color-6) 50%,var(--base-color-1));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar-button:vertical:start {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='20' viewBox='0 0 24 15' fill='%23005500'%3E%3Cpath d='M12 4l-8 8h16z'/%3E%3C/svg%3E") center no-repeat;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--header);
+}
+
+::-webkit-scrollbar-button:vertical:start:hover {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='20' viewBox='0 0 24 15' fill='%2300E300'%3E%3Cpath d='M12 4l-8 8h16z'/%3E%3C/svg%3E") center no-repeat;
+}
+
+::-webkit-scrollbar-button:vertical:end {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 10 24 12' fill='%23005500'%3E%3Cpath d='M12 20l8-8H4z'/%3E%3C/svg%3E") center no-repeat;
+    transform: rotate(30deg);
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--header);
+}
+
+::-webkit-scrollbar-button:vertical:end:hover {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 10 24 12' fill='%2300E300'%3E%3Cpath d='M12 20l8-8H4z'/%3E%3C/svg%3E") center no-repeat;
+}
+
+@keyframes fadeShadowLogo{
+    0% {
+        filter: drop-shadow(0px 0px 1px var(--base-color-1));
+    }
+    40% {
+        filter: drop-shadow(0px 0px 2px var(--base-color-4));
+    }
+    50% {
+        filter: drop-shadow(0px 0px 4px var(--white-color));
+    }
+    60% {
+        filter: drop-shadow(0px 0px 2px var(--base-color-4));
+    }
+    100% {
+        filter: drop-shadow(0px 0px 1px var(--base-color-1));
+    }
+}
+
+@keyframes fadeBackground{
+    0% {
+        background-color: var(--base-color-1);
+    }
+    40% {
+        background-color: var(--base-color-4);
+    }
+    50% {
+        background-color: var(--white-color);
+    }
+    60% {
+        background-color: var(--base-color-4);
+    }
+    100% {
+        background-color: var(--base-color-1);
+    }
+}
+
+@keyframes fadeShadow{
+    0% {
+        box-shadow: inset 0px 0px 80px -20px var(--base-color-1);
+    }
+    40% {
+        box-shadow: inset 0px 0px 80px -20px var(--base-color-4);
+    }
+    50% {
+        box-shadow: inset 0px 0px 80px -20px var(--white-color);
+    }
+    60% {
+        box-shadow: inset 0px 0px 80px -20px var(--base-color-4);
+    }
+    100% {
+        box-shadow: inset 0px 0px 80px -20px var(--base-color-1);
+    }
+}
+
+@keyframes fadeShadowOut{
+    0% {
+        box-shadow: 0px 0px 5px var(--base-color-1);
+        border: 2px solid var(--base-color-1);
+    }
+    40% {
+        box-shadow: 0px 0px 10px var(--base-color-4);
+        border: 2px solid var(--base-color-4);
+    }
+    50% {
+        box-shadow: 0px 0px 15px var(--white-color);
+        border: 2px solid var(--white-color);
+    }
+    60% {
+        box-shadow: 0px 0px 10px var(--base-color-4);
+        border: 2px solid var(--base-color-4);
+    }
+    100% {
+        box-shadow: 0px 0px 5px var(--base-color-1);
+        border: 2px solid var(--base-color-1);
+    }
+}
+
+@keyframes fadeBorder-top{
+    0% {
+        border-top: 2px solid var(--base-color-1);
+    }
+    40% {
+        border-top: 2px solid var(--base-color-4);
+    }
+    50% {
+        border-top: 2px solid var(--white-color);
+    }
+    60% {
+        border-top: 2px solid var(--base-color-4);
+    }
+    100% {
+        border-top: 2px solid var(--base-color-1);
+    }
+}
+
+@keyframes fadeBorder-bottom{
+    0% {
+        border-bottom: 2px solid var(--base-color-1);
+    }
+    40% {
+        border-bottom: 2px solid var(--base-color-4);
+    }
+    50% {
+        border-bottom: 2px solid var(--white-color);
+    }
+    60% {
+        border-bottom: 2px solid var(--base-color-4);
+    }
+    100% {
+        border-bottom: 2px solid var(--base-color-1);
+    }
+}
+
+@keyframes fadeTextShadow{
+    0% {
+        text-shadow: 0px 0px 1px var(--base-color-1);
+        color: var(--base-color-1);
+    }
+    40% {
+        text-shadow: 0px 0px 10px var(--base-color-4);
+        color: var(--base-color-4);
+    }
+    50% {
+        text-shadow: 0px 0px 25px var(--font-white-color);
+        color: var(--font-white-color);
+    }
+    60% {
+        text-shadow: 0px 0px 10px var(--base-color-4);
+        color: var(--base-color-4);
+    }
+    100% {
+        text-shadow: 0px 0px 1px var(--base-color-1);
+        color: var(--base-color-1);
+    }
+}
+
+@keyframes fadeText{
+    0% {
+        text-shadow: 0px 0px 1px var(--base-color-1);
+        color: var(--base-color-1);
+    }
+    40% {
+        text-shadow: 0px 0px 5px var(--base-color-4);
+        color: var(--base-color-4);
+    }
+    50% {
+        text-shadow: 0px 0px 10px var(--font-white-color);
+        color: var(--font-white-color);
+    }
+    60% {
+        text-shadow: 0px 0px 5px var(--base-color-4);
+        color: var(--base-color-4);
+    }
+    100% {
+        text-shadow: 0px 0px 1px var(--base-color-1);
+        color: var(--base-color-1);
+    }
+}
+
+.hex-grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    top: -63px;
+    left: -62px;
+    z-index: 1;
+    pointer-events: auto;
+}
+.hex {
+    width: 90px;
+    height: 104px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex-inner.highlight{
+    background: var(--shadow);
+    z-index: 2;
+}
+
+.hex-inner {
+    width: 96%;
+    height: 96%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: var(--header);
+    transition: .1s;
+}
+
+.hex-inner.highlight-neighbor {
+    background: var(--background-color);
+}
+
+.stars1 , .stars2 , .bigstars{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.bigstars, .stars2{
+    background: var(--shadow);
+}
+
+.star1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    animation: twinkle 5s infinite alternate;
+}
+
+.star2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: var(--base-color-4);
+    border-radius: 50%;
+    animation: twinkle 5s infinite alternate;
+}
+
+.bigstar{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 240, 220, 0.7);
+    box-shadow: 0px 0px 10px 5px rgb(245, 230, 210);
+    animation: retwinkle 4s infinite alternate;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes retwinkle {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(10px, 10px);
+    }
+}
+
+.falling-star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+    animation: falling 3s linear infinite;
+}
+
+.falling-star::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    z-index: 3;
+}
+
+.falling-star::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    background: linear-gradient(-47deg, transparent,var(--white-color));
+    z-index: 2;
+    transform: rotate(-47deg);
+    animation: tailMove 3s linear infinite;
+    border-radius: 500%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+@keyframes tailMove {
+    0% {
+        width: 10px;
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+    100% {
+        width: 200px;
+        top: -75px;
+        left: -25px;
+        opacity: 0;
+    }
+}
+
+@keyframes falling {
+    0% {
+        top: -10px;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+}
+
+.comet {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--base-color-6);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--base-color-6-50);
+    animation: cometTrail 0.5s linear infinite;
+}
+
+@keyframes cometTrail {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(30px, -30px);
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="icon" type="image/png" href="/img/iiiii.png">
+    <link rel="stylesheet" href="/style/contact.css">
+    <link rel="stylesheet" href="/style/default.css">
+    <link rel="stylesheet" href="/style/nav.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <div class="nav-vpps-logo"></div>
+            <p class="nav-text">VPPs</p>
+        </div>
+        <div class="nav-button">
+            <a href="/" class="nav-btn nav-btn1">HOME</a>
+            <a href="/about.html" class="nav-btn nav-btn2">ABOUT</a>
+            <a href="#" class="nav-btn nav-btn3">CONTACT</a>
+        </div>
+        <div class="nav-user">
+            <a href="/login.html" class="nav-login-wrap">
+                <i class="fa-regular fa-user"></i>
+                <h6 class="nav-login-text">Login</h6>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="bg">
+            <div class="stars1"></div>
+            <div class="stars2"></div>
+            <div class="bigstars"></div>
+        </div>
+        <div class="con-main-wrap">
+            <div class="con-left">
+                <div class="con-top">
+                    <div class="con-icon">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <p class="con-icon-text">PHONE</p>
+                    </div>
+                    <div class="con-detail">
+                        <div class="con-detail-info">
+                            <p class="con-detail-info-name">name</p>
+                            <p class="con-detail-info-num">xxx-xxx-xxxx</p>
+                        </div>
+                        <div class="con-detail-info">
+                            <p class="con-detail-info-name">name</p>
+                            <p class="con-detail-info-num">xxx-xxx-xxxx</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="con-bottom">
+                    <div class="con-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p class="con-icon-text">EMAIL</p>
+                    </div>
+                    <div class="con-detail">
+                        <div class="con-detail-info">
+                            <p class="con-detail-info-name">name</p>
+                            <p class="con-detail-info-mail">xxx@xxxx.xxx</p>
+                        </div>
+                        <div class="con-detail-info">
+                            <p class="con-detail-info-name">name</p>
+                            <p class="con-detail-info-mail">xxx@xxxx.xxx</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="con-right">
+                <p class="con-title">CONTACT</p>
+                <form action="/script/send_email.php" method="POST" class="con-wrap">
+                    <input class="con-input" type="text" name="name" placeholder="Name" required>
+                    <input class="con-input" type="email" name="email" placeholder="Email" required>
+                    <textarea class="con-input con-textarea" name="message" placeholder="Send Message" required></textarea>
+                    <input class="con-input con-btn" type="submit" value="SEND MESSAGE">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="f-up">
+            <div class="f-up-wrap">
+                <div class="f-logo">
+                    <div class="f-vpps-logo"></div>
+                </div>
+                <div class="f-project-name"><p>Optimizing Virtual Power Plant Performance Using Neural Networks</p></div>
+                <div class="f-nav">
+                    <a href="/" class="f-nav-btn">HOME</a>
+                    <a href="/solar.html" class="f-nav-btn">SOLAR SYSTEM</a>
+                    <a href="/about.html" class="f-nav-btn">ABOUT</a>
+                    <a href="/load-profile.html" class="f-nav-btn">LOAD PROFILE</a>
+                    <a href="#" class="f-nav-btn">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-down">
+            <p class="copyright">© copyright</p>
+        </div>
+    </footer>
+
+    <script src="/script/backgroundspace.js"></script>
+</body>
+</html>

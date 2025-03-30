@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Background</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            background: #050505;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .stars1 ,  .stars2 , .bigstars{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .star1 {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: white;
+            border-radius: 50%;
+            animation: twinkle 5s infinite alternate;
+        }
+
+        .star2 {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: darkgreen;
+            border-radius: 50%;
+            animation: twinkle 5s infinite alternate;
+        }
+
+        .bigstar{
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: rgba(255, 240, 220, 0.7);
+            box-shadow: 0px 0px 10px 5px rgb(245, 230, 210);
+            animation: retwinkle 4s infinite alternate;
+            transition: 2s;
+        }
+        
+        @keyframes twinkle {
+            0% {
+                opacity: 0.8;
+            }
+            100% {
+                opacity: 0.2;
+            }
+        }
+        
+        @keyframes retwinkle {
+            0% {
+                opacity: 0;
+            }
+        
+            50% {
+                opacity: 0.8;
+            }
+        
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* เพิ่มการเคลื่อนไหวช้าๆ ของดาวในอวกาศ */
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(10px, 10px);
+            }
+        }
+
+        .comet {
+            position: absolute;
+            width: 10px;  /* เพิ่มขนาดดาวหาง */
+            height: 10px; /* เพิ่มขนาดดาวหาง */
+            background-color: limegreen;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.7); /* เพิ่มความยาวของเงา */
+            animation: cometTrail 0.5s linear infinite;
+        }
+
+        @keyframes cometTrail {
+            0% {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(30px, -30px);
+            }
+        }
+
+        .falling-star {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+            animation: falling 3s linear infinite;
+        }
+
+        .falling-star::before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+            z-index: 3;
+        }
+
+        .falling-star::after{
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 10px;
+            background: linear-gradient(-47deg, transparent,white);
+            z-index: 2;
+            transform: rotate(-47deg);
+            animation: tailMove 3s linear infinite;
+            border-radius: 500%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        @keyframes tailMove {
+            0% {
+                width: 10px;
+                top: 0px;
+                left: 0px;
+                opacity: 1;
+            }
+            100% {
+                width: 200px;
+                top: -75px;
+                left: -25px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes falling {
+            0% {
+                top: -10px;
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            100% {
+                top: 100%;
+                opacity: 0;
+                transform: translateX(-500px);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="stars1"></div>
+    <div class="stars2"></div>
+    <div class="bigstars"></div>
+
+    <script>
+        const numStars = 400;
+        const numBigStars = 7;
+        const stars1Container = document.querySelector('.stars1');
+        const stars2Container = document.querySelector('.stars2');
+        const bigstarsContainer = document.querySelector('.bigstars');
+    
+        // ฟังก์ชันสร้างดาวในพื้นหลัง
+        function createStars() {
+            // ลบดาวเก่าใน bigstarsContainer
+            bigstarsContainer.innerHTML = '';
+    
+            // สร้างดาวใหม่
+            for (let i = 0; i < numBigStars; i++) {
+                const star = document.createElement('div');
+                star.classList.add('bigstar');
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.animationDuration = `${Math.random() * 1 + 2}s`;  // ความยาวของการ fade-in และ fade-out
+    
+                bigstarsContainer.appendChild(star);
+            }
+        }
+    
+        // สร้างดาวในพื้นหลัง
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star1');
+            star.style.left = `${Math.random() * 100}%`;
+            star.style.top = `${Math.random() * 100}%`;
+            star.style.animationDuration = `${Math.random() * 2 + 1}s`;  // random twinkling duration
+    
+            // เพิ่มการเคลื่อนไหวช้าๆ ของดาว
+            star.style.animationName = 'move';
+            star.style.animationDuration = `${Math.random() * 10 + 5}s`;  // ทำให้การเคลื่อนไหวช้า
+            star.style.animationIterationCount = 'infinite';
+            star.style.animationTimingFunction = 'linear';
+    
+            stars1Container.appendChild(star);
+        }
+    
+        // สร้างดาวในพื้นหลัง
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star2');
+            star.style.left = `${Math.random() * 100}%`;
+            star.style.top = `${Math.random() * 100}%`;
+            star.style.animationDuration = `${Math.random() * 2 + 1}s`;  // random twinkling duration
+    
+            // เพิ่มการเคลื่อนไหวช้าๆ ของดาว
+            star.style.animationName = 'move';
+            star.style.animationDuration = `${Math.random() * 10 + 5}s`;  // ทำให้การเคลื่อนไหวช้า
+            star.style.animationIterationCount = 'infinite';
+            star.style.animationTimingFunction = 'linear';
+    
+            stars2Container.appendChild(star);
+        }
+    
+        // สร้างดาวหางตามเมาส์
+        document.addEventListener('mousemove', (event) => {
+            createComet(event.clientX, event.clientY);
+            createFallingStar();  // สร้างดาวตกที่สุ่มตำแหน่ง
+        });
+    
+        function createComet(x, y) {
+            const comet = document.createElement('div');
+            comet.classList.add('comet');
+            comet.style.left = `${x - 2}px`;  // ปรับให้ดาวหางอยู่ตรงกับตำแหน่งเมาส์
+            comet.style.top = `${y - 2}px`;
+    
+            // เพิ่มดาวหางในหน้าจอ
+            document.body.appendChild(comet);
+    
+            // ลบดาวหางหลังจาก 0.5 วินาที (ให้มันหายไป)
+            setTimeout(() => {
+                comet.remove();
+            }, 400); // ดาวหางจะหายไปหลังจาก 0.5 วินาที
+        }
+    
+        const numTails = 400;
+        // ฟังก์ชันเพื่อสร้างดาวหางตกแบบสุ่ม
+        function createRandomFallingStars() {
+            setInterval(() => {
+                for (let i = 0; i < numTails; i++){}
+                const fallingStar = document.createElement('div');
+                fallingStar.classList.add('falling-star');
+                fallingStar.style.left = `${Math.random() * 100}%`;  // สุ่มตำแหน่งแนวนอน
+    
+                // เพิ่มดาวตกในหน้าจอ
+                document.body.appendChild(fallingStar);
+    
+                // ลบดาวตกหลังจาก 2 วินาที
+                setTimeout(() => {
+                    fallingStar.remove();
+                }, 3000);  // ดาวตกจะหายไปหลังจาก 2 วินาที
+            }, Math.random() * 9000);  // สุ่มระยะเวลาการสร้างดาวตก
+        }
+    
+        // เรียกใช้ฟังก์ชันสร้างดาวตกที่สุ่ม
+        createRandomFallingStars();
+        createRandomFallingStars();
+        createRandomFallingStars();
+    
+        // เรียกใช้ฟังก์ชันสร้างดาวในพื้นหลังใหม่ทุกๆ 3 วินาที
+        setInterval(createStars, 6000);
+    </script>
+    
+</body>
+</html>

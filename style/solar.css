@@ -1,0 +1,146 @@
+main{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    gap: 90px;
+    padding: 0 100px;
+    animation: fadeBackground 5s linear infinite;
+}
+
+.sdf{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.s-left{
+    width: 300px;
+    height: 350px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    z-index: 5;
+    pointer-events: none;
+    background: var(--background-color);
+    animation: fadeShadowOut 5s linear infinite;
+}
+
+.fa-solar-panel{
+    font-size: 150px;
+    animation: fadeText 5s linear infinite;
+}
+
+.s-title{
+    font-size: 35px;
+    font-weight: bold;
+    animation: fadeText 5s linear infinite;
+}
+
+.pv-score{
+    font-size: 35px;
+    color: gold;
+}
+
+.pv-ennergy{
+    animation: fadeBorder-bottom 5s linear infinite;
+}
+
+.s-right{
+    width: 900px;
+    background: var(--background-color);
+    height: 650px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 0 40px;
+    position: relative;
+    z-index: 5;
+    pointer-events: none;
+    animation: fadeShadowOut 5s linear infinite;
+}
+
+.university-name{
+    color: var(--font-white-color);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.building-name{
+    color: var(--font-white-color);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.s-card{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px dashed var(--white-color);
+}
+
+.head{
+    border-bottom: 2px solid var(--white-color);
+}
+
+.no-b{
+    border: none;
+}
+
+.pv{
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--font-white-color);
+}
+
+.s-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 300px;
+    height: 100%;
+    padding-bottom: 10px;
+    gap: 5px;
+}
+
+.pv-bar-border{
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.pv-bar{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: var(--base-color-6);
+    transition: 2s;
+}
+
+.pv-bar-num{
+    opacity: 0%;
+    animation: opacityText 1s linear 1s forwards;
+    color: var(--font-white-color);
+}
+
+@keyframes opacityText {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

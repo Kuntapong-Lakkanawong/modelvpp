@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLAR SYSTEM</title>
+    <link rel="icon" type="image/png" href="/img/iiiii.png">
+    <link rel="stylesheet" href="/style/default.css">
+    <link rel="stylesheet" href="/style/nav.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/solar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <div class="nav-vpps-logo"></div>
+            <p class="nav-text">VPPs</p>
+        </div>
+        <div class="nav-button">
+            <a href="/" class="nav-btn nav-btn1">HOME</a>
+            <a href="/about.html" class="nav-btn nav-btn2">ABOUT</a>
+            <a href="/contact.html" class="nav-btn nav-btn3">CONTACT</a>
+        </div>
+        <div class="nav-user">
+            <a href="/login.html" class="nav-login-wrap">
+                <i class="fa-regular fa-user"></i>
+                <h6 class="nav-login-text">Login</h6>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hex-grid" id="hexGrid"></div>
+        <div class="sdf"></div>
+        <div class="s-left">
+            <i class="fa-solid fa-solar-panel"></i>
+            <p class="s-title">Solar energy</p>
+            <p class="pv-score"><span class="pv-ennergy"> xxxxx.x</span><span class="pv-unit"> kWh </span></p>
+        </div>
+        <div class="s-right">
+            <div class="s-card head">
+                <p class="university-name">จุฬาลงกรณ์มหาวิทยาลัย</p>
+                <div class="s-detail">
+                    <p class="pv">pv : <span class="solar-bar-num" id="solar-bar-num-1">100</span>%</p>
+                    <div class="pv-bar-border">
+                        <div class="pv-bar" id="solar-bar-1" style="width: 0px;"><span class="pv-bar-num">xxxx</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-card">
+                <p class="building-name">สถานีชาร์จ</p>
+                <div class="s-detail">
+                    <p class="pv">pv : <span class="solar-bar-num" id="solar-bar-num-2">60</span>%</p>
+                    <div class="pv-bar-border">
+                        <div class="pv-bar" id="solar-bar-2" style="width: 0px;"><span class="pv-bar-num">xxxx</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-card">
+                <p class="building-name">อาคารจามจุรี 4</p>
+                <div class="s-detail">
+                    <p class="pv">pv : <span class="solar-bar-num" id="solar-bar-num-3">50</span>%</p>
+                    <div class="pv-bar-border">
+                        <div class="pv-bar"  id="solar-bar-3" style="width: 0px;"><span class="pv-bar-num">xxxx</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-card">
+                <p class="building-name">อาคารจามจุรี 9</p>
+                <div class="s-detail">
+                    <p class="pv">pv : <span class="solar-bar-num" id="solar-bar-num-4">20</span>%</p>
+                    <div class="pv-bar-border">
+                        <div class="pv-bar"  id="solar-bar-4" style="width: 0px;"><span class="pv-bar-num">xxxx</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-card">
+                <p class="building-name">อาคารจุลจักรพงษ์</p>
+                <div class="s-detail">
+                    <p class="pv">pv : <span class="solar-bar-num" id="solar-bar-num-5">30</span>%</p>
+                    <div class="pv-bar-border">
+                        <div class="pv-bar" id="solar-bar-5" style="width: 0px;"><span class="pv-bar-num">xxxx</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-card">
+                <p class="building-name">อาคารบรมราชกุมารี</p>
+                <div class="s-detail">
+                    <p class="pv">pv : <span class="solar-bar-num" id="solar-bar-num-6">10</span>%</p>
+                    <div class="pv-bar-border">
+                        <div class="pv-bar" id="solar-bar-6" style="width: 0px;"><span class="pv-bar-num">xxxx</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-card no-b">
+                <p class="building-name">อาคารวิทยนิเวศน์</p>
+                <div class="s-detail">
+                    <p class="pv">pv : <span class="solar-bar-num" id="solar-bar-num-7">30</span>%</p>
+                    <div class="pv-bar-border">
+                        <div class="pv-bar" id="solar-bar-7" style="width: 0px;"><span class="pv-bar-num">xxxx</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="f-up">
+            <div class="f-up-wrap">
+                <div class="f-logo">
+                    <div class="f-vpps-logo"></div>
+                </div>
+                <div class="f-project-name"><p>Optimizing Virtual Power Plant Performance Using Neural Networks</p></div>
+                <div class="f-nav">
+                    <a href="/" class="f-nav-btn">HOME</a>
+                    <a href="#" class="f-nav-btn">SOLAR SYSTEM</a>
+                    <a href="/about.html" class="f-nav-btn">ABOUT</a>
+                    <a href="/load-profile.html" class="f-nav-btn">LOAD PROFILE</a>
+                    <a href="/contact.html" class="f-nav-btn">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-down">
+            <p class="copyright">© copyright</p>
+        </div>
+    </footer>
+
+    <script src="/script//backgroundhex.js"></script>
+    <script src="/script/solar.js"></script>
+</body>
+</html>

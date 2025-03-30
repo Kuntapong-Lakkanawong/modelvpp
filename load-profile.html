@@ -1,0 +1,2118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOAD PROFILE</title>
+    <link rel="icon" type="image/png" href="/img/iiiii.png">
+    <link rel="stylesheet" href="/style/load-profile.css">
+    <link rel="stylesheet" href="/style/default.css">
+    <link rel="stylesheet" href="/style/nav.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <div class="nav-vpps-logo"></div>
+            <p class="nav-text">VPPs</p>
+        </div>
+        <div class="nav-button">
+            <a href="/" class="nav-btn nav-btn1">HOME</a>
+            <a href="/about.html" class="nav-btn nav-btn2">ABOUT</a>
+            <a href="/contact.html" class="nav-btn nav-btn3">CONTACT</a>
+        </div>
+        <div class="nav-user">
+            <a href="/login.html" class="nav-login-wrap">
+                <i class="fa-regular fa-user"></i>
+                <h6 class="nav-login-text">Login</h6>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hex-grid" id="hexGrid"></div>
+        <div class="lp-wrap">
+        <div class="lp-head">
+            <p class="lp-head-text"><span>LOAD</span><span>PROFILE</span></p>
+        </div>
+        <div class="lp-detail">
+            <div class="lp-cardwrap">
+                <div class="lp-card" id="building-1">
+                    <div class="lp-up">
+                        <p class="building-name">สถานีชาร์จ</p>
+                    </div>
+                    <div class="lp-down">
+                        <div class="lp-left">
+                            <div class="lp-left-top">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div class="lp-left-bottom">
+                                <div class="battery">
+                                    <div class="battery-bar" id="building1" style="width: 0%;"></div>
+                                </div>
+                                <p class="lp-bat-num" id="num-building1">70</p>
+                                <p class="lp-bat-percent">%</p>
+                            </div>
+                        </div>
+                        <div class="lp-mid">
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Energy</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="lp-text-num-building-1"></span>
+                                    <span class="lp-text-unit">kWh</span>
+                                </div>
+                            </div>
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Power</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="power-num-building-1"></span>
+                                    <span class="lp-text-unit">kW</span>
+                                </div>
+                            </div>
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Peak</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="peak-num-building-1"></span>
+                                    <span class="lp-text-unit">kW</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lp-right">
+                            <div class="power-bar-wrap">
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-1" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-2" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-3" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-4" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-5" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-6" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-7" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-8" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-9" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-10" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-11" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-12" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-13" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-14" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-15" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-16" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-17" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-18" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-19" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-20" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-21" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-22" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-23" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-24" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-25" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-26" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-27" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-28" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-29" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-30" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-31" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-32" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-33" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-34" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-35" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-36" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-37" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-38" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-39" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-40" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-41" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-42" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-43" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-44" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-45" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-46" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-47" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-48" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-49" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-50" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-51" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-52" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-53" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-54" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-55" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-56" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-57" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-58" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-59" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-60" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-61" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-62" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-63" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-64" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-65" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-66" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-67" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-68" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-69" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-70" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-71" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-72" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-73" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-74" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-75" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-76" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-77" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-78" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-79" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-80" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-81" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-82" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-83" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-84" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-85" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-86" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-87" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-88" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-89" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-90" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-91" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-92" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-93" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-94" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-95" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-1-bar-time-96" style="height: 0px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lp-card" id="building-2">
+                    <div class="lp-up">
+                        <p class="building-name">อาคารจามจุรี 4</p>
+                    </div>
+                    <div class="lp-down">
+                        <div class="lp-left">
+                            <div class="lp-left-top">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div class="lp-left-bottom">
+                                <div class="battery">
+                                    <div class="battery-bar" id="building2" style="width: 0%;"></div>
+                                </div>
+                                <p class="lp-bat-num" id="num-building2">60</p>
+                                <p class="lp-bat-percent">%</p>
+                            </div>
+                        </div>
+                        <div class="lp-mid">
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Energy</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="lp-text-num-building-2"></span>
+                                    <span class="lp-text-unit">kWh</span>
+                                </div>
+                            </div>
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Power</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="power-num-building-2"></span>
+                                    <span class="lp-text-unit">kW</span>
+                                </div>
+                            </div>
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Peak</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="peak-num-building-2"></span>
+                                    <span class="lp-text-unit">kW</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lp-right">
+                            <div class="power-bar-wrap">
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-1" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-2" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-3" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-4" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-5" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-6" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-7" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-8" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-9" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-10" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-11" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-12" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-13" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-14" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-15" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-16" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-17" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-18" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-19" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-20" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-21" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-22" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-23" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-24" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-25" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-26" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-27" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-28" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-29" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-30" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-31" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-32" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-33" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-34" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-35" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-36" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-37" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-38" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-39" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-40" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-41" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-42" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-43" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-44" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-45" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-46" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-47" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-48" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-49" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-50" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-51" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-52" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-53" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-54" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-55" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-56" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-57" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-58" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-59" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-60" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-61" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-62" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-63" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-64" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-65" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-66" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-67" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-68" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-69" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-70" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-71" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-72" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-73" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-74" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-75" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-76" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-77" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-78" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-79" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-80" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-81" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-82" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-83" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-84" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-85" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-86" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-87" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-88" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-89" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-90" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-91" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-92" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-93" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-94" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-95" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-2-bar-time-96" style="height: 0px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lp-card" id="building-3">
+                    <div class="lp-up">
+                        <p class="building-name">อาคารจามจุรี 9</p>
+                    </div>
+                    <div class="lp-down">
+                        <div class="lp-left">
+                            <div class="lp-left-top">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div class="lp-left-bottom">
+                                <div class="battery">
+                                    <div class="battery-bar" id="building3" style="width: 0%;"></div>
+                                </div>
+                                <p class="lp-bat-num" id="num-building3">60</p>
+                                <p class="lp-bat-percent">%</p>
+                            </div>
+                        </div>
+                        <div class="lp-mid">
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Energy</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="lp-text-num-building-3"></span>
+                                    <span class="lp-text-unit">kWh</span>
+                                </div>
+                            </div>
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Power</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="power-num-building-3"></span>
+                                    <span class="lp-text-unit">kW</span>
+                                </div>
+                            </div>
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Peak</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="peak-num-building-3"></span>
+                                    <span class="lp-text-unit">kW</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lp-right">
+                            <div class="power-bar-wrap" id="today">
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-1" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-2" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-3" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-4" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-5" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-6" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-7" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-8" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-9" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-10" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-11" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-12" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-13" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-14" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-15" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-16" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-17" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-18" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-19" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-20" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-21" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-22" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-23" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-24" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-25" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-26" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-27" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-28" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-29" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-30" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-31" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-32" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-33" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-34" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-35" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-36" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-37" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-38" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-39" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-40" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-41" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-42" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-43" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-44" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-45" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-46" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-47" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-48" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-49" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-50" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-51" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-52" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-53" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-54" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-55" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-56" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-57" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-58" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-59" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-60" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-61" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-62" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-63" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-64" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-65" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-66" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-67" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-68" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-69" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-70" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-71" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-72" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-73" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-74" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-75" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-76" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-77" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-78" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-79" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-80" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-81" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-82" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-83" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-84" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-85" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-86" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-87" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-88" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-89" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-90" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-91" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-92" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-93" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-94" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-95" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-3-bar-time-96" style="height: 0px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lp-card" id="building-4">
+                    <div class="lp-up">
+                        <p class="building-name">อาคารจุลจักรพงษ์</p>
+                    </div>
+                    <div class="lp-down">
+                        <div class="lp-left">
+                            <div class="lp-left-top">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div class="lp-left-bottom">
+                                <div class="battery">
+                                    <div class="battery-bar" id="building4" style="width: 0%;"></div>
+                                </div>
+                                <p class="lp-bat-num" id="num-building4">50</p>
+                                <p class="lp-bat-percent">%</p>
+                            </div>
+                        </div>
+                        <div class="lp-mid">
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Energy</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="lp-text-num-building-4"></span>
+                                    <span class="lp-text-unit">kWh</span>
+                                </div>
+                            </div>
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Power</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="power-num-building-4"></span>
+                                    <span class="lp-text-unit">kW</span>
+                                </div>
+                            </div>
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Peak</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="peak-num-building-4"></span>
+                                    <span class="lp-text-unit">kW</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lp-right">
+                            <div class="power-bar-wrap" id="today">
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-1" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-2" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-3" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-4" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-5" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-6" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-7" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-8" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-9" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-10" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-11" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-12" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-13" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-14" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-15" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-16" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-17" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-18" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-19" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-20" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-21" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-22" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-23" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-24" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-25" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-26" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-27" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-28" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-29" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-30" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-31" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-32" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-33" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-34" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-35" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-36" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-37" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-38" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-39" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-40" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-41" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-42" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-43" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-44" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-45" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-46" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-47" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-48" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-49" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-50" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-51" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-52" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-53" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-54" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-55" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-56" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-57" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-58" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-59" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-60" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-61" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-62" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-63" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-64" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-65" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-66" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-67" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-68" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-69" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-70" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-71" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-72" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-73" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-74" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-75" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-76" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-77" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-78" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-79" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-80" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-81" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-82" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-83" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-84" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-85" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-86" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-87" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-88" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-89" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-90" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-91" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-92" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-93" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-94" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-95" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-4-bar-time-96" style="height: 0px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lp-card" id="building-5">
+                    <div class="lp-up">
+                        <p class="building-name">อาคารบรมราชกุมารี</p>
+                    </div>
+                    <div class="lp-down">
+                        <div class="lp-left">
+                            <div class="lp-left-top">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div class="lp-left-bottom">
+                                <div class="battery">
+                                    <div class="battery-bar" id="building5" style="width: 0%;"></div>
+                                </div>
+                                <p class="lp-bat-num" id="num-building5">40</p>
+                                <p class="lp-bat-percent">%</p>
+                            </div>
+                        </div>
+                        <div class="lp-mid">
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Energy</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="lp-text-num-building-5"></span>
+                                    <span class="lp-text-unit">kWh</span>
+                                </div>
+                            </div>
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Power</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num"  id="power-num-building-5"></span>
+                                    <span class="lp-text-unit">kW</span>
+                                </div>
+                            </div>
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Peak</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="peak-num-building-5"></span>
+                                    <span class="lp-text-unit">kW</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lp-right">
+                            <div class="power-bar-wrap" id="today">
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-1" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-2" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-3" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-4" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-5" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-6" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-7" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-8" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-9" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-10" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-11" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-12" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-13" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-14" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-15" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-16" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-17" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-18" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-19" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-20" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-21" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-22" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-23" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-24" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-25" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-26" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-27" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-28" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-29" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-30" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-31" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-32" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-33" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-34" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-35" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-36" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-37" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-38" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-39" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-40" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-41" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-42" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-43" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-44" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-45" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-46" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-47" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-48" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-49" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-50" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-51" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-52" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-53" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-54" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-55" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-56" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-57" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-58" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-59" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-60" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-61" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-62" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-63" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-64" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-65" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-66" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-67" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-68" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-69" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-70" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-71" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-72" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-73" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-74" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-75" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-76" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-77" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-78" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-79" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-80" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-81" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-82" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-83" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-84" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-85" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-86" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-87" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-88" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-89" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-90" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-91" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-92" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-93" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-94" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-95" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-5-bar-time-96" style="height: 0px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lp-card" id="building-6">
+                    <div class="lp-up">
+                        <p class="building-name">อาคารวิทยนิเวศน์</p>
+                    </div>
+                    <div class="lp-down">
+                        <div class="lp-left">
+                            <div class="lp-left-top">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div class="lp-left-bottom">
+                                <div class="battery">
+                                    <div class="battery-bar" id="building6" style="width: 0%;"></div>
+                                </div>
+                                <p class="lp-bat-num" id="num-building6">30</p>
+                                <p class="lp-bat-percent">%</p>
+                            </div>
+                        </div>
+                        <div class="lp-mid">
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Energy</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="lp-text-num-building-6"></span>
+                                    <span class="lp-text-unit">kWh</span>
+                                </div>
+                            </div>
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Power</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="power-num-building-6"></span>
+                                    <span class="lp-text-unit">kW</span>
+                                </div>
+                            </div>
+                            <div class="lp-section">
+                                <div class="lp-mid-left">
+                                    <p class="lp-min-left-text">Peak</p>
+                                </div>
+                                <div class="lp-mid-right">
+                                    <span class="lp-text-num" id="peak-num-building-6"></span>
+                                    <span class="lp-text-unit">kW</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lp-right">
+                            <div class="power-bar-wrap" id="today">
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-1" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-2" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-3" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-4" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-5" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-6" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-7" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-8" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-9" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-10" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-11" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-12" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-13" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-14" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-15" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-16" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-17" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-18" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-19" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-20" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-21" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-22" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-23" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-24" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-25" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-26" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-27" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-28" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-29" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-30" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-31" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-32" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-33" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-34" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-35" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-36" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-37" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-38" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-39" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-40" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-41" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-42" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-43" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-44" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-45" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-46" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-47" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-48" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-49" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-50" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-51" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-52" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-53" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-54" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-55" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-56" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-57" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-58" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-59" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-60" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-61" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-62" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-63" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-64" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-65" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-66" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-67" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-68" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-69" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-70" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-71" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-72" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-73" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-74" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-75" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-76" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-77" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-78" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-79" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-80" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-81" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-82" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-83" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-84" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-85" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-86" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-87" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-88" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-89" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-90" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-91" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-92" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-93" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-94" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-95" style="height: 0px;"></div>
+                                </div>
+                                <div class="power" id="time">
+                                    <div class="power-bar" id="building-6-bar-time-96" style="height: 0px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="more-btn">
+                <p class="moreandless-text">
+                    <span><i class="fa-solid fa-arrow-down" id="arrow"></i></span>
+                    <span class="more-text">More</span>
+                    <span class="less-text">Less</span>
+                </p>
+            </button>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="f-up">
+            <div class="f-up-wrap">
+                <div class="f-logo">
+                    <div class="f-vpps-logo"></div>
+                </div>
+                <div class="f-project-name"><p>Optimizing Virtual Power Plant Performance Using Neural Networks</p></div>
+                <div class="f-nav">
+                    <a href="/" class="f-nav-btn">HOME</a>
+                    <a href="/solar.html" class="f-nav-btn">SOLAR SYSTEM</a>
+                    <a href="/about.html" class="f-nav-btn">ABOUT</a>
+                    <a href="#" class="f-nav-btn">LOAD PROFILE</a>
+                    <a href="/contact.html" class="f-nav-btn">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-down">
+            <p class="copyright">© copyright</p>
+        </div>
+    </footer>
+
+    <script src="/script//backgroundhex.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script type="module" src="/script/load-profile.js"></script>
+</body>
+</html>

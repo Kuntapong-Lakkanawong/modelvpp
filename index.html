@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="icon" type="image/png" href="/img/iiiii.png">
+    <link rel="stylesheet" href="/style/default.css">
+    <link rel="stylesheet" href="/style/nav.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/home.css">
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.104/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <div class="nav-vpps-logo"></div>
+            <p class="nav-text">VPPs</p>
+        </div>
+        <div class="nav-button">
+            <a href="#" class="nav-btn1 nav-btn ">HOME</a>
+            <a href="/about.html" class="nav-btn nav-btn2">ABOUT</a>
+            <a href="/contact.html" class="nav-btn nav-btn3">CONTACT</a>
+        </div>
+        <div class="nav-user">
+            <a href="/login.html" class="nav-login-wrap">
+                <i class="fa-regular fa-user"></i>
+                <h6 class="nav-login-text">Login</h6>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-nav">
+            <a href="/solar.html" class="main-btn">
+                <i class="fa-solid fa-solar-panel"></i>
+            </a>
+            <a href="/load-profile.html" class="main-btn">
+                <i class="fa-solid fa-battery-three-quarters"></i>
+            </a>
+        </div>
+        <div class="map"></div>
+        <div class="reset-button" onclick="resetView()">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div id="cesiumContainer"></div>
+        <div id="tooltip"></div>
+    </main>
+
+    <footer>
+        <div class="f-up">
+            <div class="f-up-wrap">
+                <div class="f-logo">
+                    <div class="f-vpps-logo"></div>
+                </div>
+                <div class="f-project-name"><p>Optimizing Virtual Power Plant Performance Using Neural Networks</p></div>
+                <div class="f-nav">
+                    <a href="#" class="f-nav-btn">HOME</a>
+                    <a href="/solar.html" class="f-nav-btn">SOLAR SYSTEM</a>
+                    <a href="/about.html" class="f-nav-btn">ABOUT</a>
+                    <a href="/load-profile.html" class="f-nav-btn">LOAD PROFILE</a>
+                    <a href="/contact.html" class="f-nav-btn">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-down">
+            <p class="copyright">© copyright</p>
+        </div>
+    </footer>
+    
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.104/Build/Cesium/Cesium.js"></script>
+    <script src="/script/map.js"></script>
+</body>
+</html>

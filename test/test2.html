@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Date</title>
+    <style>
+        #date-container {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="date-container"></div>
+
+    <script>
+        // Get the current date
+        const date = new Date();
+
+        // Array of month names
+        const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+
+        // Get day, month, and year
+        const day = date.getDate();
+        const month = months[date.getMonth()];
+        const year = date.getFullYear();
+
+        // Format the date
+        const formattedDate = `${month} ${day}, ${year}`;
+
+        // Display the date in the HTML element
+        document.getElementById('date-container').textContent = formattedDate;
+    </script>
+</body>
+</html>

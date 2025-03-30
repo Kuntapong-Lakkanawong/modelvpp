@@ -1,0 +1,143 @@
+.con-main-wrap{
+    position: absolute;
+    display: flex;
+    padding: 40px 150px;
+    gap: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.con-left , .con-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.con-left{
+    padding: 20px 0;
+    gap: 80px;
+}
+
+.con-top , .con-bottom {
+    flex: 1;
+    background: var(--color-block);
+    border-radius: 30px;
+    display: flex;
+    padding: 30px 10px;
+}
+
+.con-icon{
+    width: 43%;
+}
+
+.con-detail{
+    width: 57%;
+}
+
+.con-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--base-color-6);
+    font-size: 75px;
+    gap: 20px;
+}
+
+.con-icon-text{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.con-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--font-white-color);
+}
+
+.con-right{
+    background: var(--color-block);
+    border-radius: 20px;
+    padding: 20px 70px;
+}
+
+.con-wrap{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 25px;
+}
+
+.con-title{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--font-white-color);
+    text-shadow: 0px 4px 4px var(--font-white-color);
+}
+
+.con-title::first-letter{
+    color: var(--base-color-6);
+    text-shadow: 0px 4px 4px var(--base-color-3);
+}
+
+.con-input{
+    flex: 1;
+    border-radius: 50px;
+    padding: 0 20px;
+    box-shadow: 0px 4px 4px var(--shadow);
+    border: 2px solid var(--input-color);
+    background: var(--input-color);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--font-white-color);
+    transition: .2s;
+}
+
+.con-input::placeholder{
+    color: var(--p-font-white-color)
+}
+
+.con-input:hover{
+    transform: scale(1.03);
+    border: 2px solid var(--base-color-6);
+    box-shadow: 0px 4px 4px var(--base-color-3);
+}
+
+.con-input:focus{
+    border: 2px solid var(--base-color-6);
+    box-shadow: 0px 4px 4px var(--base-color-3);
+    outline: none;
+}
+
+.con-textarea{
+    flex: 4;
+    border-radius: 30px;
+    padding: 20px;
+    color: var(--font-white-color);
+    resize: none;
+}
+
+.con-btn , .con-btn:hover{
+    background: var(--color-block);
+    border: none;
+}
+
+.con-btn:hover{
+    background: radial-gradient(var(--base-color-6) 70% , var(--base-color-4));
+}
+
+input[value="SEND MESSAGE"]{
+    border-radius: 15px;
+    color: var(--font-white-color);
+}
+
+input[value="SEND MESSAGE"]:hover{
+    font-size: 25px;
+}

@@ -1,0 +1,157 @@
+main{
+    height: calc(100vh - 90px);
+    position: relative;
+}
+
+.main-nav{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 60px;
+    gap: 60px;
+}
+
+.main-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: radial-gradient(var(--black-color) 50% , var(--dark-grey-color));
+    font-size: 70px;
+    text-decoration: none;
+    color: var(--font-white-color);
+    transition: .3s;
+}
+
+.main-btn:hover{
+    transform: scale(1.1);
+    color: var(--base-color-6);
+    background: radial-gradient(var(--black-color) 60% , var(--base-color-3));
+}
+
+.main-btn > i {
+    transition: .1s;
+}
+
+.main-btn:hover > i{
+    transform: scale(1.15);
+    text-shadow: 0px 0px 5px var(--base-color-4);
+}
+
+.main-btn::after{
+    content: "";
+    display: none;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 50%;
+    position: absolute;
+    border-top: 4px solid var(--base-color-6);
+    border-left: 1px dashed var(--base-color-6);
+}
+
+.main-btn::before{
+    content: "";
+    display: none;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border-radius: 50%;
+    position: absolute;
+    border-bottom: 7px solid var(--base-color-6);
+    border-right: 2px dashed var(--base-color-6);
+}
+
+
+.main-btn:hover::after , .main-btn:hover::before{
+    display: block;
+    animation: rotage 5s infinite;
+    filter: drop-shadow(0px 0px 5px var(--base-color-4));
+}
+
+#cesiumContainer{
+    bottom: 0;
+    height: calc(100vh - 90px);
+}
+
+.reset-button {
+    position: absolute;
+    top: 8px;
+    right: 85px;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background: radial-gradient(var(--black-color) 70% , var(--dark-grey-color));
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    transition: .2s;
+}
+
+.reset-button:hover {
+    background: var(--base-color-4);
+    box-shadow: 0px 0px 6px 1px var(--base-color-4);
+}
+
+.cesium-home-button, /* ปุ่ม View Home */
+.cesium-viewer-bottom,
+.cesium-fullscreenButton,
+.cesium-viewer-geocoderContainer,  /* Search Box */
+.cesium-sceneModePicker-wrapper { /* ปุ่ม 3D/2D */
+    display: none !important;
+}
+
+.cesium-baseLayerPicker-dropDown-visible , .cesium-navigation-help-visible{
+    z-index: 99;
+}
+
+.cesium-viewer-toolbar > button ,
+.cesium-navigationHelpButton-wrapper > button{
+    border: none;
+    transition: .1s;
+}
+
+.cesium-viewer-toolbar > button:hover ,
+.cesium-navigationHelpButton-wrapper > button:hover{
+    border: 1px solid var(--base-color-4);
+    box-shadow: 0px 0px 6px 1px var(--base-color-4);
+}
+
+#tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    display: none;
+}
+
+.cesium-svgPath-svg{
+    background: radial-gradient(var(--black-color) 70% , var(--dark-grey-color));
+}
+
+.cesium-svgPath-svg:hover{
+    background: var(--base-color-4);
+}
+
+@keyframes rotage{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,144 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 200px;
+    color: var(--font-white-color);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.efc-block{
+    position: absolute;
+    height: calc(100% - 80px);
+    width: calc(100% - 400px);
+    background: var(--header);
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    z-index: 10;
+}
+
+.efc-title{
+    width: 100%;
+    height: 55px;
+    background: var(--bg-s);
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+.efc-title-top{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    justify-content: start;
+    gap: 10px;
+}
+
+.efc-top , .efc-bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.efc-bottom{
+    width: 100%;
+    height: calc(100% - 55px - 170px);
+}
+
+.efc-info{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+}
+
+.efc-info-top{
+    width: 100%;
+    height: fit-content;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 35px;
+    padding-top: 15px;
+}
+
+.efc-info-bottom{
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+
+.efc-chart{
+    width: 100%;
+    height: calc(100% - 55px);
+    position: relative;
+}
+
+.power-bar-wrap{
+    position: absolute;
+    width: 80%;
+    height: 250px;
+    display: flex;
+    gap: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background: var(--bg-s);
+    overflow-x: visible;
+}
+
+.power{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.power-bar{
+    position: relative;
+    width: 100%;
+    background: var(--base-color-6);
+    border: 1px solid var(--base-color-5);
+    transition: 1.2s;
+    bottom: -2px;
+}
+
+.power-bar:hover::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    bottom: -65px;
+    font-size: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--header);
+    color: var(--font-white-color);
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.power:hover{
+    flex: 1.4;
+}
+
+.power-bar:hover{
+    transition: .1s;
+    background: var(--base-color-3);
+    border: 1px solid var(--base-color-2);
+}

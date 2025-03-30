@@ -1,0 +1,175 @@
+Frequency '15T' stored as '15min'
+Beginning AutoGluon training...
+AutoGluon will save models to '/content/Walailak_University_15T'
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.11.11
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Jun 27 21:05:47 UTC 2024
+CPU Count:          2
+GPU Count:          1
+Memory Avail:       11.04 GB / 12.67 GB (87.1%)
+Disk Space Avail:   80.55 GB / 112.64 GB (71.5%)
+===================================================
+
+Fitting with arguments:
+{'enable_ensemble': True,
+ 'eval_metric': MAE,
+ 'freq': '15min',
+ 'hyperparameters': {'ADIDAModel': {},
+                     'AutoARIMAModel': {},
+                     'AutoCESModel': {},
+                     'AutoETSModel': {},
+                     'AverageModel': {},
+                     'ChronosModel': {},
+                     'CrostonSBAModel': {},
+                     'DLinearModel': {},
+                     'DeepARModel': {},
+                     'DirectTabularModel': {},
+                     'ETS': {},
+                     'IMAPAModel': {},
+                     'NPTSModel': {},
+                     'NaiveModel': {},
+                     'PatchTSTModel': {},
+                     'RecursiveTabularModel': {},
+                     'SeasonalAverageModel': {},
+                     'SeasonalNaiveModel': {},
+                     'SimpleFeedForwardModel': {},
+                     'TemporalFusionTransformerModel': {},
+                     'ThetaModel': {},
+                     'TiDEModel': {},
+                     'WaveNetModel': {},
+                     'ZeroModel': {}},
+ 'known_covariates_names': [],
+ 'num_val_windows': 1,
+ 'prediction_length': 96,
+ 'quantile_levels': [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9],
+ 'random_seed': 123,
+ 'refit_every_n_windows': 1,
+ 'refit_full': False,
+ 'skip_model_selection': False,
+ 'target': 'Power',
+ 'verbosity': 2}
+
+train_data with frequency 'None' has been resampled to frequency '15min'.
+Provided train_data has 34944 rows (NaN fraction=4.2%), 1 time series. Median time series length is 34944 (min=34944, max=34944). 
+
+Provided data contains following columns:
+	target: 'Power'
+
+AutoGluon will gauge predictive performance using evaluation metric: 'MAE'
+	This metric's sign has been flipped to adhere to being higher_is_better. The metric score can be multiplied by -1 to get the metric value.
+===================================================
+
+Starting training. Start time is 2025-01-21 08:25:53
+Models that will be trained: ['Naive', 'SeasonalNaive', 'Average', 'SeasonalAverage', 'Zero', 'RecursiveTabular', 'DirectTabular', 'ETS', 'Croston', 'NPTS', 'Theta', 'AutoETS', 'AutoARIMA', 'Chronos[autogluon__chronos-bolt-small]', 'TemporalFusionTransformer', 'DeepAR', 'PatchTST', 'TiDE', 'WaveNet', 'AutoCES', 'ADIDA', 'IMAPA', 'SimpleFeedForward', 'DLinear']
+Training timeseries model Naive. 
+	-178.1458     = Validation score (-MAE)
+	0.04    s     = Training runtime
+	0.02    s     = Validation (prediction) runtime
+Training timeseries model SeasonalNaive. 
+	-62.2500      = Validation score (-MAE)
+	0.04    s     = Training runtime
+	0.02    s     = Validation (prediction) runtime
+Training timeseries model Average. 
+	-190.2708     = Validation score (-MAE)
+	0.04    s     = Training runtime
+	0.03    s     = Validation (prediction) runtime
+Training timeseries model SeasonalAverage. 
+	-53.8099      = Validation score (-MAE)
+	0.04    s     = Training runtime
+	0.36    s     = Validation (prediction) runtime
+Training timeseries model Zero. 
+	-314.1042     = Validation score (-MAE)
+	0.05    s     = Training runtime
+	0.02    s     = Validation (prediction) runtime
+Training timeseries model RecursiveTabular. 
+	-42.7704      = Validation score (-MAE)
+	13.04   s     = Training runtime
+	2.98    s     = Validation (prediction) runtime
+Training timeseries model DirectTabular. 
+	-51.2048      = Validation score (-MAE)
+	3.58    s     = Training runtime
+	0.62    s     = Validation (prediction) runtime
+Training timeseries model ETS. 
+	-178.1418     = Validation score (-MAE)
+	0.08    s     = Training runtime
+	2.88    s     = Validation (prediction) runtime
+Training timeseries model Croston. 
+	-136.4822     = Validation score (-MAE)
+	0.06    s     = Training runtime
+	1.17    s     = Validation (prediction) runtime
+Training timeseries model NPTS. 
+	-140.4375     = Validation score (-MAE)
+	0.04    s     = Training runtime
+	1.37    s     = Validation (prediction) runtime
+Training timeseries model Theta. 
+	-73.8532      = Validation score (-MAE)
+	0.05    s     = Training runtime
+	26.40   s     = Validation (prediction) runtime
+Training timeseries model AutoETS. 
+	-178.1418     = Validation score (-MAE)
+	0.05    s     = Training runtime
+	0.97    s     = Validation (prediction) runtime
+Training timeseries model AutoARIMA. 
+	-56.6155      = Validation score (-MAE)
+	0.06    s     = Training runtime
+	316.84  s     = Validation (prediction) runtime
+Training timeseries model Chronos[autogluon__chronos-bolt-small]. 
+	-59.3362      = Validation score (-MAE)
+	12.86   s     = Training runtime
+	9.46    s     = Validation (prediction) runtime
+Training timeseries model TemporalFusionTransformer. 
+	-38.1440      = Validation score (-MAE)
+	96.61   s     = Training runtime
+	0.07    s     = Validation (prediction) runtime
+Training timeseries model DeepAR. 
+	-43.4466      = Validation score (-MAE)
+	180.00  s     = Training runtime
+	0.44    s     = Validation (prediction) runtime
+Training timeseries model PatchTST. 
+	-41.3058      = Validation score (-MAE)
+	94.20   s     = Training runtime
+	0.03    s     = Validation (prediction) runtime
+Training timeseries model TiDE. 
+	-56.1403      = Validation score (-MAE)
+	181.55  s     = Training runtime
+	0.05    s     = Validation (prediction) runtime
+Training timeseries model WaveNet. 
+	-48.4569      = Validation score (-MAE)
+	99.71   s     = Training runtime
+	0.56    s     = Validation (prediction) runtime
+Training timeseries model AutoCES. 
+	-64.9919      = Validation score (-MAE)
+	0.05    s     = Training runtime
+	20.06   s     = Validation (prediction) runtime
+Training timeseries model ADIDA. 
+	-142.1128     = Validation score (-MAE)
+	0.05    s     = Training runtime
+	0.33    s     = Validation (prediction) runtime
+Training timeseries model IMAPA. 
+	-142.1128     = Validation score (-MAE)
+	0.05    s     = Training runtime
+	0.03    s     = Validation (prediction) runtime
+Training timeseries model SimpleFeedForward. 
+	-42.0297      = Validation score (-MAE)
+	113.61  s     = Training runtime
+	0.03    s     = Validation (prediction) runtime
+Training timeseries model DLinear. 
+	-45.3334      = Validation score (-MAE)
+	93.29   s     = Training runtime
+	0.03    s     = Validation (prediction) runtime
+Fitting simple weighted ensemble.
+	Ensemble weights: {'AutoCES': 0.12, 'Average': 0.01, 'PatchTST': 0.01, 'RecursiveTabular': 0.37, 'SeasonalAverage': 0.23, 'SeasonalNaive': 0.01, 'TemporalFusionTransformer': 0.24}
+	-27.2644      = Validation score (-MAE)
+	2.29    s     = Training runtime
+	23.55   s     = Validation (prediction) runtime
+Training complete. Models trained: ['Naive', 'SeasonalNaive', 'Average', 'SeasonalAverage', 'Zero', 'RecursiveTabular', 'DirectTabular', 'ETS', 'Croston', 'NPTS', 'Theta', 'AutoETS', 'AutoARIMA', 'Chronos[autogluon__chronos-bolt-small]', 'TemporalFusionTransformer', 'DeepAR', 'PatchTST', 'TiDE', 'WaveNet', 'AutoCES', 'ADIDA', 'IMAPA', 'SimpleFeedForward', 'DLinear', 'WeightedEnsemble']
+Total runtime: 1281.15 s
+Best model: WeightedEnsemble
+Best model score: -27.2644
+data with frequency 'None' has been resampled to frequency '15min'.
+Model not specified in predict, will default to the model with the best validation score: WeightedEnsemble
+data with frequency 'None' has been resampled to frequency '15min'.
+Loading predictor from path /content/Walailak_University_15T
